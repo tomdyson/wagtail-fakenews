@@ -1,0 +1,38 @@
+{% load wagtailcore_tags  wagtailimages_tags %}
+
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .copy p {
+            margin-bottom: 1.25rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sm:px-16 px-4 pt-8 pb-6 border-b border-gray-400 border-opacity-75">
+        <h1 class="text-3xl font-normal">{{ page.title }}</h1>
+        <p class="pt-0 pb-4 font-light text-red-400">{{ page.year }} ~ {{ page.author }}</p>
+    </header>
+    <div class="container sm:px-16 px-6 pt-8 max-w-3xl pb-12">
+        <div class="pb-4 text-xl font-normal italic">{{ page.introduction }}</div>
+        {% image page.image width-400 %}
+        {% for child in self.body %}
+        {% if child.block_type == 'heading' %}
+        <h2 class="text-2xl font-normal pt-6">{{ child }}</h2>
+        {% else %}
+        <span class="copy pb-0">{{ child }}</span>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
