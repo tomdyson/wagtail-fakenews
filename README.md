@@ -4,8 +4,9 @@ Create fake news for testing.
 
 ## Installation
 
-1. Add `fakenews` to `INSTALLED_APPS`
-2. `./manage.py migrate fakenews`
+1. `pip install git+git://github.com/tomdyson/wagtail-fakenews.git#egg=wagtail-fakenews`
+2. Add `fakenews` to `INSTALLED_APPS`
+3. `./manage.py migrate fakenews`
 
 ## Usage
 
