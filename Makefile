@@ -8,7 +8,7 @@ build: ## Build the package.
 	@echo '== Cleanup =='
 	rm dist/* 2>/dev/null || true
 	@echo '== Build project =='
-	python setup.py sdist
+	python3 setup.py sdist bdist_wheel
 
 publish: build ## Publishes a new version to PyPI.
 	@echo '== Publish project to PyPi =='

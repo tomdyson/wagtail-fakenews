@@ -4,7 +4,7 @@ Create fake news for testing.
 
 ## Installation
 
-1. `pip install git+git://github.com/tomdyson/wagtail-fakenews.git#egg=wagtail-fakenews`
+1. `pip install wagtail-fakenews`
 2. Add `fakenews` to `INSTALLED_APPS`
 3. `./manage.py migrate fakenews`
 
@@ -26,4 +26,8 @@ Create a fake news index page in the Wagtail admin. Fake news items will be crea
  - [x] REST API
  - [x] Simple page template
  - [x] Streamfield?
- - [ ] Publish to PyPi
+ - [x] Publish to PyPi
+ - [ ] Instructions for exposing REST API
+ - [ ] Fix broken Markdown rendering on PyPI page
+ - [ ] Gitpod instance
+ - [ ] GraphQL API
