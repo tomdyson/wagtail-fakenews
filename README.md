@@ -27,7 +27,7 @@ Create a fake news index page in the Wagtail admin. Fake news items will be crea
  - [x] Simple page template
  - [x] Streamfield?
  - [x] Publish to PyPi
+ - [x] Fix broken Markdown rendering on PyPI page
  - [ ] Instructions for exposing REST API
- - [ ] Fix broken Markdown rendering on PyPI page
  - [ ] Gitpod instance
  - [ ] GraphQL API
