@@ -7,7 +7,7 @@ tasks:
     wagtail start mysite . &&
     python -m pip install -r requirements.txt &&
     python setup.py install &&
-    echo "INSTALLED_APPS += ['fakenews']" >> mysite/settings/base.py
+    echo "INSTALLED_APPS += ['fakenews']" >> mysite/settings/base.py &&
     python manage.py migrate &&
     python manage.py make_fake_items 100 &&
     echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python3 manage.py shell
