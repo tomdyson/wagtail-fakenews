@@ -10,6 +10,11 @@ class Migration(migrations.Migration):
 
     initial = True
 
+    dependencies = [
+        ("wagtailcore", "0052_pagelogentry"),
+        ("wagtailimages", "0022_uploadedimage"),
+    ]
+
     operations = [
         migrations.CreateModel(
             name="FakeNewsIndexPage",
