@@ -53,9 +53,6 @@ coverage.xml
 # PyBuilder
 target/
 
-# pyenv
-.python-version
-
 # SageMath parsed files
 *.sage.py
 
