@@ -2,7 +2,7 @@
 
 Create fake news for testing.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tomdyson/wagtail-fakenews/tree/gitpod)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tomdyson/wagtail-fakenews)
 
 ## Installation
 
