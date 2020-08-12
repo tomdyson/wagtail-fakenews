@@ -2,6 +2,8 @@
 
 Create fake news for testing.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tomdyson/wagtail-fakenews/tree/gitpod)
+
 ## Installation
 
 1. `pip install wagtail-fakenews`
