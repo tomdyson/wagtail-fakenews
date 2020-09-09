@@ -1,6 +1,5 @@
 ports:
 - port: 8080
-  onOpen: open-preview
 tasks:
 - init: >
     python -m pip install wagtail &&
