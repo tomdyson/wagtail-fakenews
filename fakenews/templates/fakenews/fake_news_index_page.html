@@ -1,1 +1,26 @@
-Todo
+{% load wagtailcore_tags %}
+
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sm:px-16 px-4 pt-8 pb-6 border-b border-gray-400 border-opacity-75">
+        <h1 class="text-3xl font-normal">{{ page.title }}</h1>
+    </header>
+    <div class="container sm:px-16 px-6 pt-8 max-w-3xl pb-12">
+        {% for post in page.get_children %}
+        {% with post=post.specific %}
+        <h1 class="text-2xl font-normal"><a href="{{ post.slug }}/"
+                class="no-underline hover:underline">{{ post.title }}</a></h1>
+        <p class="pt-0 pb-4 font-light text-red-400">{{ post.year }} ~ {{ post.author }}</p>
+        {% endwith %}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
